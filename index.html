@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trade Journal Pro</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h1>Trade Journal Pro</h1>
+
+<div class="card">
+<h2>New Trade</h2>
+<input id="symbol" placeholder="Symbol">
+<select id="direction"><option>Buy</option><option>Sell</option></select>
+<input id="entry" type="number" placeholder="Entry">
+<input id="exit" type="number" placeholder="Exit">
+<input id="risk" type="number" placeholder="Risk Amount">
+<input id="reward" type="number" placeholder="Reward Amount">
+<input id="strategy" placeholder="Strategy">
+<textarea id="notes" placeholder="Notes"></textarea>
+<input id="screenshot" type="file" accept="image/*">
+<button onclick="saveTrade()">Save Trade</button>
+</div>
+
+<div class="card"><h2>Statistics</h2><div id="stats"></div></div>
+<div class="card"><canvas id="equityChart"></canvas></div>
+<div class="card"><button onclick="exportCSV()">Export CSV</button></div>
+<div class="card"><div id="trades"></div></div>
+
+<script src="app.js"></script>
+</body></html>

@@ -1,0 +1,8 @@
+{
+  "name": "Trade Journal Pro",
+  "short_name": "TJP",
+  "display": "standalone",
+  "theme_color": "#111111",
+  "background_color": "#111111",
+  "start_url": "./"
+}
